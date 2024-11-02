@@ -14,6 +14,7 @@ public class RestApiFunc {
         final ExecutionContext context) {
 
         Logger logger = context.getLogger();
+        
         logger.info("HTTP trigger function processed a request.");
 
         // Return response with "hello word \n"
