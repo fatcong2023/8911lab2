@@ -2,6 +2,7 @@ package xs8911mid;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,5 +29,17 @@ public class DatabaseService {
             }
         }
         return students;
+    }
+
+        public static void addStudent(String firstName, String lastName, String email) throws Exception {
+        String insertSql = "INSERT INTO students (studentId, studentFirstName, studentLastName, studentEmail) VALUES (uuid_generate_v4(), ?, ?, ?)";
+        try (Connection connection = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(insertSql)) {
+
+            preparedStatement.setString(1, firstName);
+            preparedStatement.setString(2, lastName);
+            preparedStatement.setString(3, email);
+            preparedStatement.executeUpdate();
+        }
     }
 }

@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../xs8911mid-1.0-SNAPSHOT.jar",
+  "entryPoint" : "xs8911mid.RestApiFunc.addStudent",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "route" : "add",
+    "methods" : [ "POST" ],
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
