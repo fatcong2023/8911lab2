@@ -8,7 +8,7 @@ import java.util.List;
 import java.sql.Statement;
 
 public class DatabaseService {
-    private static final String DB_URL = "jdbc:postgresql://c-midtermdb.yk2sptchxyway7.postgres.cosmos.azure.com:5432/postgres";
+    private static final String DB_URL = "jdbc:postgresql://c-midtermdb.yk2sptchxyway7.postgres.cosmos.azure.com:5432/midtermDB";
     private static final String USERNAME = "citus";
     private static final String PASSWORD = "Frankcj12s!";
 
