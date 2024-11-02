@@ -18,7 +18,7 @@
         <azure.functions.maven.plugin.version>1.24.0</azure.functions.maven.plugin.version>
         <azure.functions.java.library.version>2.2.0</azure.functions.java.library.version>
         <!-- Update functionAppName to your existing Function App name -->
-        <functionAppName>8911midterm</functionAppName>
+        <functionAppName>new8911mid</functionAppName>
     </properties>
 
     <dependencies>
@@ -39,6 +39,11 @@
             <artifactId>mockito-core</artifactId>
             <version>2.23.4</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.23</version>
         </dependency>
     </dependencies>
 
@@ -64,9 +69,9 @@
                     <!-- Use your existing Function App name -->
                     <appName>${functionAppName}</appName>
                     <!-- Use your existing resource group -->
-                    <resourceGroup>8911</resourceGroup>
+                    <resourceGroup>new8911</resourceGroup>
                     <!-- Use your existing App Service Plan -->
-                    <appServicePlanName>ASP-8911-b9e8</appServicePlanName>
+                    <appServicePlanName>ASP-8911-b764</appServicePlanName>
                     <!-- Set the region to your Function App's region -->
                     <region>canadacentral</region>
                     <!-- Runtime configuration -->
@@ -79,10 +84,6 @@
                         <property>
                             <name>FUNCTIONS_EXTENSION_VERSION</name>
                             <value>~4</value>
-                        </property>
-                        <property>
-                            <name>AzureWebJobsStorage</name>
-                            <value>DefaultEndpointsProtocol=https;AccountName=8911lab2storage;AccountKey=YourAccountKey;EndpointSuffix=core.windows.net</value>
                         </property>
                     </appSettings>
                 </configuration>
