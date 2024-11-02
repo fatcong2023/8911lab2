@@ -18,7 +18,7 @@
         <azure.functions.maven.plugin.version>1.24.0</azure.functions.maven.plugin.version>
         <azure.functions.java.library.version>2.2.0</azure.functions.java.library.version>
         <!-- Update functionAppName to your existing Function App name -->
-        <functionAppName>midtermrestapi</functionAppName>
+        <functionAppName>8911midterm</functionAppName>
     </properties>
 
     <dependencies>
@@ -66,7 +66,7 @@
                     <!-- Use your existing resource group -->
                     <resourceGroup>8911</resourceGroup>
                     <!-- Use your existing App Service Plan -->
-                    <appServicePlanName>ASP-8911-985b</appServicePlanName>
+                    <appServicePlanName>ASP-8911-b9e8</appServicePlanName>
                     <!-- Set the region to your Function App's region -->
                     <region>canadacentral</region>
                     <!-- Runtime configuration -->

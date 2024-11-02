@@ -10,7 +10,8 @@ public class RestApiFunc {
     @FunctionName("RestApiFunction")
     public HttpResponseMessage getHello(
         @HttpTrigger(name = "req", 
-                     methods = {HttpMethod.GET}, 
+                     methods = {HttpMethod.GET},
+                     authLevel = AuthorizationLevel.ANONYMOUS,
                      route = "get") HttpRequestMessage<Optional<String>> request,
         final ExecutionContext context) {
 

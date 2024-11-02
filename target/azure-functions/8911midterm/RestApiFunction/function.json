@@ -7,7 +7,7 @@
     "name" : "req",
     "route" : "get",
     "methods" : [ "GET" ],
-    "authLevel" : "FUNCTION"
+    "authLevel" : "ANONYMOUS"
   }, {
     "type" : "http",
     "direction" : "out",
