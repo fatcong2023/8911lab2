@@ -21,5 +21,6 @@ public class RestApiFunc {
         return request.createResponseBuilder(HttpStatus.OK)
                       .body("hello word \n")
                       .build();
+                      
     }
 }
