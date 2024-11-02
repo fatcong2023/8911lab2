@@ -4,6 +4,7 @@ import com.microsoft.azure.functions.annotation.*;
 import com.microsoft.azure.functions.*;
 
 import java.util.logging.Logger;
+import java.util.Optional;
 
 public class RestApiFunc {
     @FunctionName("RestApiFunction")
@@ -21,6 +22,6 @@ public class RestApiFunc {
         return request.createResponseBuilder(HttpStatus.OK)
                       .body("hello word \n")
                       .build();
-                      
+
     }
 }

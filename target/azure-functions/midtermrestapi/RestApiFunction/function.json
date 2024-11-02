@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../xs8911mid-1.0-SNAPSHOT.jar",
+  "entryPoint" : "xs8911mid.RestApiFunc.getHello",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "route" : "get",
+    "methods" : [ "GET" ],
+    "authLevel" : "FUNCTION"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
