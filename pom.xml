@@ -5,12 +5,12 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>xs8911lab2</groupId>
-    <artifactId>xs8911lab2</artifactId>
+    <groupId>xs8911mid</groupId>
+    <artifactId>xs8911mid</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Azure Java Functions</name>
+    <name>Azure Java Functions Midterm</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,7 +18,7 @@
         <azure.functions.maven.plugin.version>1.24.0</azure.functions.maven.plugin.version>
         <azure.functions.java.library.version>2.2.0</azure.functions.java.library.version>
         <!-- Update functionAppName to your existing Function App name -->
-        <functionAppName>blobtrigger8911</functionAppName>
+        <functionAppName>midtermrestapi</functionAppName>
     </properties>
 
     <dependencies>
@@ -64,9 +64,9 @@
                     <!-- Use your existing Function App name -->
                     <appName>${functionAppName}</appName>
                     <!-- Use your existing resource group -->
-                    <resourceGroup>8911lab2</resourceGroup>
+                    <resourceGroup>8911</resourceGroup>
                     <!-- Use your existing App Service Plan -->
-                    <appServicePlanName>ASP-8911lab2-ad91</appServicePlanName>
+                    <appServicePlanName>ASP-8911-985b</appServicePlanName>
                     <!-- Set the region to your Function App's region -->
                     <region>canadacentral</region>
                     <!-- Runtime configuration -->
