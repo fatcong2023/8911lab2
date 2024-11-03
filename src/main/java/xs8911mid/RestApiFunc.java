@@ -14,7 +14,7 @@ public class RestApiFunc {
     public HttpResponseMessage getHello(
         @HttpTrigger(name = "req",
                      methods = {HttpMethod.GET},
-                     authLevel = AuthorizationLevel.ANONYMOUS,
+                     authLevel = AuthorizationLevel.FUNCTION,
                      route = "get") HttpRequestMessage<Optional<String>> request,
         final ExecutionContext context) {
 
@@ -37,7 +37,6 @@ public class RestApiFunc {
                       .header("Content-Type", "application/json")
                       .body(jsonResponse)
                       .build();
-
     }
 
     @FunctionName("AddStudentFunction")
